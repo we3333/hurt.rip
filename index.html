@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/6f8abaa287.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>we#3333</title>
+        <meta name="description" content="we#3333">
+        <link rel="icon" href="logo.png">
+    </head>
+    <body>
+    <a onclick="enterportal()"id="enter-portal">Enter</a>
+    <div id="body-div">
+        <div style="width:95%;">
+            <div class="socials-div">
+                <a href="https://instagram.com/soul2trusted" target="_blank"><i  class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@alqaeda" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://discord.dog/373938903058612236" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+        <div class="socials-div-mobile">
+            <a href="https://instagram.com/soul2trusted" target="_blank"><i  style="margin-top: 20px;" class="fab fa-instagram"></i></a>
+            <br>
+            <a href="https://www.tiktok.com/@alqaeda" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <br>
+            <a href="https://discord.dog/373938903058612236" target="_blank"><i class="fab fa-discord"></i></a>
+        </div>
+    </div>
+    <script>
+        function enterportal(){
+            var audio = new Audio('audio.mp3');
+            audio.play();
+            document.getElementById('body-div').style.display = "inline-block"
+            document.getElementById('enter-portal').style.display = "none";
+        }
+    </script>
+    </body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        *{
+            font-family: 'Poppins';
+        }
+        body{
+            background: black;
+        }
+        #body-div{
+            display: none;
+            animation-name: fade;
+            animation-duration: 4s;
+        }
+
+        .ray{
+            color: aliceblue;
+            position: absolute;
+            margin-top: 350px;
+            margin-bottom: 1000px;
+            margin-left: 985px;
+            margin-left: 1000x;
+        }
+
+        #enter-portal{
+            color:white;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-decoration: none;
+            text-shadow: 0px 0px 10px white;
+            display: inline-block;
+            font-size: 20px;
+
+        }
+        #enter-portal:hover{
+            cursor: pointer;
+        }
+        #background-video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        .socials-div{
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            /*width: 95%; */
+            z-index: 2;
+            background: transparent;
+            box-shadow: 0px 0px 10px 10px black;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.8);
+            animation: bordercolor infinite;
+            animation-duration: 10s;
+        }
+        .socials-div-mobile{
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -10%);
+            text-align: center;
+            z-index: 2;
+            padding: 10px;
+            display: none;
+            background: transparent;
+            box-shadow: 0px 0px 10px 10px black;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.8);
+            animation: bordercolor infinite;
+            animation-duration: 10s;
+            
+        }
+        a{
+            color:white;
+            font-size: 60px;
+            margin-left: 20px;
+            transition: ease-out .01s;
+            z-index: 2;
+            background: transparent;
+        }
+        i{
+            animation: iconcolor infinite forwards;
+            animation-duration: 10s;
+        }
+        i:hover{
+            transform: scale(1.07);
+            transition: ease-in .01s;
+            cursor: pointer;
+        }
+        @keyframes fade{
+            0% {opacity: 0%;}
+            100% {opacity: 100%;}
+        }
+        @keyframes bordercolor{
+            100%{box-shadow: 0px 0px 10px 5px rgb(69, 136, 85);}
+        }
+        @keyframes iconcolor{
+            100%{text-shadow: 0px 0px 10px rgb(75, 182, 107);}
+        }
+
+        
+        @media (min-width: 100px) and (max-width: 924px) {
+        #background-video{
+            display: none;
+        }
+        body{
+            background: black;
+        }
+        .socials-div-mobile{
+            display: inline-block;
+            box-shadow: 0px 0px 10px 10px #121212;
+        }
+        i{
+            margin-bottom: 20px;
+            text-shadow: 0px 0px 10px rgb(83, 156, 95);
+            animation: iconcolor infinite forwards;
+            animation-duration: 10s;
+        }
+        .socials-div{
+            display: none;
+        }
+        a{
+            margin-left: 0px;
+        }
+        
+        }
+    </style>
+</html>
